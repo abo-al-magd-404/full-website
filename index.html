@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Design</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Settings Box -->
+    <div class="settings-box">
+      <div class="icon">
+        <i class="material-icons">arrow_forward</i>
+      </div>
+      <div class="settings-container">
+        <!-- Color Options -->
+        <div class="option-box colors">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li data-color="#2196f3" class="active"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#673ab7"></li>
+            <li data-color="#4caf50"></li>
+            <li data-color="#ffc107"></li>
+          </ul>
+        </div>
+        <!-- Background Options -->
+        <div class="option-box backgrounds">
+          <h4>Random Backgrounds</h4>
+          <button class="yes" data-background="yes">Random Pictures</button>
+          <button class="no" data-background="no">Static Picture</button>
+        </div>
+        <!-- Bullets Options -->
+        <div class="option-box bullets">
+          <h4>Show Bullets</h4>
+          <div class="bullets-option">
+            <button class="yes active" data-display="yes">YES</button>
+            <button class="no" data-display="no">NO</button>
+          </div>
+        </div>
+        <button class="reset">Reset Options</button>
+      </div>
+    </div>
+    <!-- Navigation Bullets -->
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tooltip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tooltip">Our Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tooltip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tooltip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".features">
+        <div class="tooltip">Features</div>
+      </div>
+      <div class="bullet" data-section=".testimonials">
+        <div class="tooltip">Testimonials</div>
+      </div>
+      <div class="bullet" data-section=".contact">
+        <div class="tooltip">Contact Us</div>
+      </div>
+    </div>
+    <!-- Landing Page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <!-- Header Area -->
+      <div class="header-area">
+        <div class="logo">Special Design</div>
+        <div class="links-container">
+          <ul class="links">
+            <li><a href="#" data-section=".about-us">About</a></li>
+            <li><a href="#" data-section=".skills">Skills</a></li>
+            <li><a href="#" data-section=".gallery">Gallery</a></li>
+            <li><a href="#" data-section=".timeline">Timeline</a></li>
+            <li><a href="#" data-section=".features">Features</a></li>
+            <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+            <li><a href="#" data-section=".contact">Contact Us</a></li>
+          </ul>
+          <button class="toggle-menu" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <!-- Introduction Text -->
+      <div class="introduction-text">
+        <h1>We Are <span>Creative</span> Agency</h1>
+        <p>
+          Welcome to Special Design, your partner in innovative and creative
+          digital solutions. We turn your ideas into reality with passion and
+          expertise.
+        </p>
+      </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="container">
+      <section class="about-us">
+        <div class="info">
+          <h2>About Us</h2>
+          <p>
+            We are a team of passionate designers and developers dedicated to
+            delivering high-quality web solutions. Our mission is to help
+            businesses grow by creating engaging and effective digital
+            experiences.
+          </p>
+        </div>
+        <div class="image-box">
+          <img src="pics/about-us.jpg" alt="About Us" />
+        </div>
+      </section>
+    </div>
+    <!-- Our Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <h2>Our Skills</h2>
+        <div class="skill-box">
+          <div class="name">HTML</div>
+          <div class="progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">CSS</div>
+          <div class="progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">JavaScript</div>
+          <div class="progress">
+            <span data-progress="65%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">BootStrap</div>
+          <div class="progress">
+            <span data-progress="50%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">React</div>
+          <div class="progress">
+            <span data-progress="50%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container">
+        <h2>Our Gallery</h2>
+        <div class="images-box">
+          <img src="pics/01.jpg" alt="Image One" />
+          <img src="pics/02.jpg" alt="Image Two" />
+          <img src="pics/03.jpg" alt="Image Three" />
+          <img src="pics/04.jpg" alt="Image Four" />
+          <img src="pics/05.jpg" alt="Image Five" />
+          <img src="pics/06.png" alt="Image Six" />
+          <img src="pics/07.jpg" alt="Image Seven" />
+          <img src="pics/08.jpg" alt="Image Eight" />
+          <img src="pics/09.jpg" alt="Image Nine" />
+          <img src="pics/10.jpg" alt="Image Ten" />
+        </div>
+      </div>
+    </section>
+    <!-- Timeline -->
+    <section class="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2025</div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>Launched New Company Website</h3>
+              <p>
+                In early 2025, we successfully launched our redesigned company
+                website, featuring a modern user interface, improved
+                performance, and enhanced accessibility.<br />
+                This project involved collaboration between our design,
+                development, and marketing teams to ensure a seamless user
+                experience and better showcase our services.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="content">
+              <h3>Expanded Our Services</h3>
+              <p>
+                In mid-2025, we expanded our range of services to include mobile
+                app development and cloud solutions.<br />
+                This strategic move allowed us to better serve our clients'
+                evolving needs and stay ahead in the fast-paced digital
+                landscape.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>Opened New Regional Office</h3>
+              <p>
+                Later in 2025, we opened a new regional office to strengthen our
+                presence and support for local clients.<br />
+                This expansion enabled us to provide faster response times and
+                build stronger relationships within the community.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2026</div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="content">
+              <h3>Embracing the Future</h3>
+              <p>
+                2026 marks a year of motivation and growth for our team. We are
+                committed to continuous learning, innovation, and delivering
+                exceptional value to our clients.<br />
+                Together, we believe that every challenge is an opportunity, and
+                every idea can spark a new success story.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features">
+      <h2>Our Features</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="pics/Icon_01.png" alt="Web Development Icon" />
+          <h4>Web Development</h4>
+          <p>
+            Our team builds modern, responsive websites using the latest
+            technologies to ensure your business stands out online and delivers
+            a seamless user experience.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="pics/Icon_02.png" alt="UI/UX Design Icon" />
+          <h4>UI/UX Design</h4>
+          <p>
+            We craft intuitive and visually appealing interfaces that enhance
+            user engagement and make your digital products easy and enjoyable to
+            use.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="pics/Icon_03.png" alt="Mobile Apps Icon" />
+          <h4>Mobile Applications</h4>
+          <p>
+            From concept to launch, we develop high-quality mobile apps for iOS
+            and Android, helping you reach customers on any device, anywhere.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="pics/Icon_04.png" alt="Cloud Solutions Icon" />
+          <h4>Cloud Solutions</h4>
+          <p>
+            We offer scalable cloud services that improve your business
+            efficiency, security, and flexibility, enabling you to grow without
+            limits.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="pics/Icon_05.png" alt="E-Commerce Icon" />
+          <h4>E-Commerce</h4>
+          <p>
+            Our e-commerce solutions help you sell online with secure payment
+            integration, easy product management, and a smooth shopping
+            experience for your customers.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="pics/Icon_06.png" alt="Support Icon" />
+          <h4>Ongoing Support</h4>
+          <p>
+            We provide continuous support and maintenance to keep your digital
+            products running smoothly, so you can focus on your business goals.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="testimonials-content">
+        <h2>Testimonials</h2>
+        <div class="ts-box">
+          <p>
+            Working with Special Design was a fantastic experience.<br />
+            Their team delivered our project on time and exceeded our
+            expectations in every way.
+          </p>
+          <div class="person-info">
+            <img
+              src="https://placehold.co/80x80/DDD/222?text=404"
+              alt="Osama Elzero"
+            />
+            <h4>Osama Elzero</h4>
+            <p>CEO At Creative Agency</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            The professionalism and creativity shown by the team were
+            outstanding.<br />
+            I highly recommend their services to anyone looking for quality
+            work.
+          </p>
+          <div class="person-info">
+            <img
+              src="https://placehold.co/80x80/EEE/333?text=NULL"
+              alt="Ahmed Mokhtar"
+            />
+            <h4>Ahmed Mokhtar</h4>
+            <p>Project Manager</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            Their support and attention to detail made the whole process smooth
+            and enjoyable.<br />
+            I look forward to working with them again.
+          </p>
+          <div class="person-info">
+            <img
+              src="https://placehold.co/80x80/CCC/111?text=</>"
+              alt="Abo Al Magd"
+            />
+            <h4>Abo Al Magd</h4>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+    <!-- Contact Us -->
+    <section class="contact">
+      <div class="overlay">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="#" autocomplete="off">
+            <div class="left">
+              <input type="text" placeholder="Your Name" name="name" />
+              <input type="text" placeholder="Your phone" name="phone" />
+              <input type="email" placeholder="Your Email" name="email" />
+              <input type="text" placeholder="Subject" name="subject" />
+            </div>
+            <div class="right">
+              <textarea name="Message" placeholder="Your Message"></textarea>
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      Created With <span><i class="material-icons">favorite</i></span> By
+      <span>Abo_al_magd</span>
+    </footer>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
